@@ -14,6 +14,16 @@
 		D359794D212C9CD70078C349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D359794B212C9CD70078C349 /* LaunchScreen.storyboard */; };
 		D3597958212C9CD70078C349 /* NumberOfDaysOldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3597957212C9CD70078C349 /* NumberOfDaysOldTests.swift */; };
 		D3597963212C9CD80078C349 /* NumberOfDaysOldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3597962212C9CD80078C349 /* NumberOfDaysOldUITests.swift */; };
+		D3597972212C9E7A0078C349 /* CQBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3597971212C9E7A0078C349 /* CQBaseTableViewCell.swift */; };
+		D3597976212C9ED40078C349 /* CQFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3597975212C9ED40078C349 /* CQFormTableViewController.swift */; };
+		D359797A212C9F270078C349 /* CQFormFieldInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3597979212C9F270078C349 /* CQFormFieldInputTableViewCell.swift */; };
+		D359797C212C9F480078C349 /* CQFormFieldChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359797B212C9F480078C349 /* CQFormFieldChoiceTableViewCell.swift */; };
+		D359797E212CA1C30078C349 /* CQProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359797D212CA1C20078C349 /* CQProtocols.swift */; };
+		D3597983212CA4A30078C349 /* CQFormFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3597982212CA4A30078C349 /* CQFormFields.swift */; };
+		D3597985212CA5280078C349 /* CQEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3597984212CA5280078C349 /* CQEnums.swift */; };
+		D3597987212CA8D20078C349 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3597986212CA8D20078C349 /* Localizable.strings */; };
+		D3597989212CA9480078C349 /* CQExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3597988212CA9480078C349 /* CQExtensions.swift */; };
+		D359798B212CFBE00078C349 /* CQUitlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359798A212CFBE00078C349 /* CQUitlities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,16 @@
 		D359795E212C9CD80078C349 /* NumberOfDaysOldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumberOfDaysOldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3597962212C9CD80078C349 /* NumberOfDaysOldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfDaysOldUITests.swift; sourceTree = "<group>"; };
 		D3597964212C9CD80078C349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3597971212C9E7A0078C349 /* CQBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQBaseTableViewCell.swift; sourceTree = "<group>"; };
+		D3597975212C9ED40078C349 /* CQFormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQFormTableViewController.swift; sourceTree = "<group>"; };
+		D3597979212C9F270078C349 /* CQFormFieldInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQFormFieldInputTableViewCell.swift; sourceTree = "<group>"; };
+		D359797B212C9F480078C349 /* CQFormFieldChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQFormFieldChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		D359797D212CA1C20078C349 /* CQProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQProtocols.swift; sourceTree = "<group>"; };
+		D3597982212CA4A30078C349 /* CQFormFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQFormFields.swift; sourceTree = "<group>"; };
+		D3597984212CA5280078C349 /* CQEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQEnums.swift; sourceTree = "<group>"; };
+		D3597986212CA8D20078C349 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D3597988212CA9480078C349 /* CQExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQExtensions.swift; sourceTree = "<group>"; };
+		D359798A212CFBE00078C349 /* CQUitlities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQUitlities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +97,7 @@
 		D3597936212C9CC30078C349 = {
 			isa = PBXGroup;
 			children = (
+				D3597986212CA8D20078C349 /* Localizable.strings */,
 				D3597941212C9CC30078C349 /* NumberOfDaysOld */,
 				D3597956212C9CD70078C349 /* NumberOfDaysOldTests */,
 				D3597961212C9CD80078C349 /* NumberOfDaysOldUITests */,
@@ -97,12 +118,16 @@
 		D3597941212C9CC30078C349 /* NumberOfDaysOld */ = {
 			isa = PBXGroup;
 			children = (
-				D3597942212C9CC30078C349 /* AppDelegate.swift */,
+				D3597981212CA48B0078C349 /* Models */,
+				D3597974212C9E9F0078C349 /* UI */,
+				D359797F212CA1CD0078C349 /* Protocols */,
+				D3597980212CA1EC0078C349 /* AppDelegate */,
 				D3597944212C9CC30078C349 /* ViewController.swift */,
 				D3597946212C9CC30078C349 /* Main.storyboard */,
 				D3597949212C9CD70078C349 /* Assets.xcassets */,
 				D359794B212C9CD70078C349 /* LaunchScreen.storyboard */,
 				D359794E212C9CD70078C349 /* Info.plist */,
+				D359798C212CFBE70078C349 /* Uitlities */,
 			);
 			path = NumberOfDaysOld;
 			sourceTree = "<group>";
@@ -123,6 +148,83 @@
 				D3597964212C9CD80078C349 /* Info.plist */,
 			);
 			path = NumberOfDaysOldUITests;
+			sourceTree = "<group>";
+		};
+		D3597970212C9E530078C349 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				D3597971212C9E7A0078C349 /* CQBaseTableViewCell.swift */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		D3597973212C9E820078C349 /* FormTable */ = {
+			isa = PBXGroup;
+			children = (
+				D3597977212C9EDF0078C349 /* FormTableView */,
+			);
+			path = FormTable;
+			sourceTree = "<group>";
+		};
+		D3597974212C9E9F0078C349 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D3597970212C9E530078C349 /* BaseViews */,
+				D3597973212C9E820078C349 /* FormTable */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D3597977212C9EDF0078C349 /* FormTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D3597975212C9ED40078C349 /* CQFormTableViewController.swift */,
+				D3597978212C9EEE0078C349 /* FormTabeleCell */,
+			);
+			path = FormTableView;
+			sourceTree = "<group>";
+		};
+		D3597978212C9EEE0078C349 /* FormTabeleCell */ = {
+			isa = PBXGroup;
+			children = (
+				D3597979212C9F270078C349 /* CQFormFieldInputTableViewCell.swift */,
+				D359797B212C9F480078C349 /* CQFormFieldChoiceTableViewCell.swift */,
+			);
+			path = FormTabeleCell;
+			sourceTree = "<group>";
+		};
+		D359797F212CA1CD0078C349 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D359797D212CA1C20078C349 /* CQProtocols.swift */,
+				D3597984212CA5280078C349 /* CQEnums.swift */,
+				D3597988212CA9480078C349 /* CQExtensions.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D3597980212CA1EC0078C349 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D3597942212C9CC30078C349 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D3597981212CA48B0078C349 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3597982212CA4A30078C349 /* CQFormFields.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D359798C212CFBE70078C349 /* Uitlities */ = {
+			isa = PBXGroup;
+			children = (
+				D359798A212CFBE00078C349 /* CQUitlities.swift */,
+			);
+			path = Uitlities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +333,7 @@
 			files = (
 				D359794D212C9CD70078C349 /* LaunchScreen.storyboard in Resources */,
 				D359794A212C9CD70078C349 /* Assets.xcassets in Resources */,
+				D3597987212CA8D20078C349 /* Localizable.strings in Resources */,
 				D3597948212C9CC30078C349 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +359,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D359797E212CA1C30078C349 /* CQProtocols.swift in Sources */,
+				D359797C212C9F480078C349 /* CQFormFieldChoiceTableViewCell.swift in Sources */,
+				D3597972212C9E7A0078C349 /* CQBaseTableViewCell.swift in Sources */,
+				D3597985212CA5280078C349 /* CQEnums.swift in Sources */,
+				D3597976212C9ED40078C349 /* CQFormTableViewController.swift in Sources */,
+				D3597983212CA4A30078C349 /* CQFormFields.swift in Sources */,
 				D3597945212C9CC30078C349 /* ViewController.swift in Sources */,
+				D359797A212C9F270078C349 /* CQFormFieldInputTableViewCell.swift in Sources */,
 				D3597943212C9CC30078C349 /* AppDelegate.swift in Sources */,
+				D359798B212CFBE00078C349 /* CQUitlities.swift in Sources */,
+				D3597989212CA9480078C349 /* CQExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

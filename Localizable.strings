@@ -1,0 +1,20 @@
+/* 
+  Locallizable.strings
+  NumberOfDaysOld
+
+  Created by Sanooj on 22/08/2018.
+  Copyright © 2018 Sanooj. All rights reserved.
+*/
+
+"FIRST_NAME" = "First Name";
+"LAST_NAME" = "Last Name";
+"DATE_OF_BIRTH" = "Date of birth";
+"GENDER" = "Gender";
+"MALE" = "Male";
+"FEMALE" = "Female";
+"DONE" = "Done";
+"CANCEL" = "Cancel";
+"INCOMPLETE" = "I'm sorry, not all your inputs were valid";
+"BIRTHDAY_GREETING_FORMAT" = "Hi %@ %@ %@, you are born on %@. You are exactly %@ days old";
+"MISTER" = "Mr.";
+"MISS" = "Ms.";

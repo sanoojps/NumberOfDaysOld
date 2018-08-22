@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hJw-S8-QEV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,7 +14,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NumberOfDaysOld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +24,129 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Form Table View Controller-->
+        <scene sceneID="AzQ-6f-5OQ">
+            <objects>
+                <tableViewController storyboardIdentifier="CQFormTableViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4fg-ZR-AWo" customClass="CQFormTableViewController" customModule="NumberOfDaysOld" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="NiL-21-EJg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CQFormFieldInputTableViewCellID" rowHeight="111" id="YdY-kd-vTo" customClass="CQFormFieldInputTableViewCell" customModule="NumberOfDaysOld" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="111"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YdY-kd-vTo" id="10V-aV-8Ch">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pSb-Cb-awf">
+                                            <rect key="frame" x="16" y="11" width="343" height="89"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BB-lj-tHq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K8y-hD-zfQ">
+                                                    <rect key="frame" x="0.0" y="39" width="343" height="50"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="pSb-Cb-awf" secondAttribute="trailing" id="Pi1-cJ-dZ3"/>
+                                        <constraint firstItem="pSb-Cb-awf" firstAttribute="leading" secondItem="10V-aV-8Ch" secondAttribute="leadingMargin" id="QK1-48-3BT"/>
+                                        <constraint firstItem="pSb-Cb-awf" firstAttribute="top" secondItem="10V-aV-8Ch" secondAttribute="topMargin" id="VSB-ZT-zZf"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="pSb-Cb-awf" secondAttribute="bottom" id="lKH-Hk-1Xd"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="formFieldInputTitle" destination="9BB-lj-tHq" id="s5a-4V-9JV"/>
+                                    <outlet property="formFieldInputValue" destination="K8y-hD-zfQ" id="hgr-8Z-de4"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CQFormFieldChoiceTableViewCellID" rowHeight="123" id="6Rp-Yz-uaf" customClass="CQFormFieldChoiceTableViewCell" customModule="NumberOfDaysOld" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="166.5" width="375" height="123"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Rp-Yz-uaf" id="GbG-k2-oFf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="122.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DJs-92-MZ2">
+                                            <rect key="frame" x="16" y="11" width="343" height="101"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQr-YC-prd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="36.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Sc0-tQ-oKS">
+                                                    <rect key="frame" x="0.0" y="44.5" width="343" height="57.5"/>
+                                                    <segments>
+                                                        <segment title="First"/>
+                                                        <segment title="Second"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="choiceSegmentIndexDidChange:" destination="6Rp-Yz-uaf" eventType="valueChanged" id="XUF-oH-E2N"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="DJs-92-MZ2" secondAttribute="bottom" id="7zo-cf-OJ7"/>
+                                        <constraint firstItem="DJs-92-MZ2" firstAttribute="leading" secondItem="GbG-k2-oFf" secondAttribute="leadingMargin" id="Pq8-su-eAW"/>
+                                        <constraint firstItem="DJs-92-MZ2" firstAttribute="top" secondItem="GbG-k2-oFf" secondAttribute="topMargin" id="l12-Z5-pGS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="DJs-92-MZ2" secondAttribute="trailing" id="nCu-a3-xfT"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="formFieldChoiceSegment" destination="Sc0-tQ-oKS" id="tJp-GL-wK1"/>
+                                    <outlet property="formFieldChoiceTitle" destination="tQr-YC-prd" id="hFx-HD-gsm"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4fg-ZR-AWo" id="JMk-g9-gJN"/>
+                            <outlet property="delegate" destination="4fg-ZR-AWo" id="NVH-bd-UBk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mPz-aD-w9C">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="We1-hi-prA">
+                            <connections>
+                                <action selector="onSubmitButtonDown:" destination="4fg-ZR-AWo" id="2HE-cY-OBL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cnF-BF-M3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687.2" y="114.69265367316342"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vbg-Bp-AbP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hJw-S8-QEV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mE6-4y-PiS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4fg-ZR-AWo" kind="relationship" relationship="rootViewController" id="MVk-vW-xQ5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGG-nQ-UtR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="114.69265367316342"/>
         </scene>
     </scenes>
 </document>
