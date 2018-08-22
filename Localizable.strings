@@ -15,6 +15,6 @@
 "DONE" = "Done";
 "CANCEL" = "Cancel";
 "INCOMPLETE" = "I'm sorry, not all your inputs were valid";
-"BIRTHDAY_GREETING_FORMAT" = "Hi %@ %@ %@, you are born on %@. You are exactly %@ days old";
+"BIRTHDAY_GREETING_FORMAT" = "Hi %@ %@ %@, you were born on %@. You are exactly %@ days old";
 "MISTER" = "Mr.";
 "MISS" = "Ms.";

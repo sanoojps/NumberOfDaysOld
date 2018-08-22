@@ -78,9 +78,7 @@ extension CQFormFieldInputTableViewCell: UITextFieldDelegate
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         self.replacementString = string
-        
-        self.changePropagationDelegate?.value(of: self.formFieldInputValue, changedAt: self)
-        
+    
         return true
     }
     
@@ -95,6 +93,10 @@ extension CQFormFieldInputTableViewCell: UITextFieldDelegate
     func textFieldDidEndEditing(_ textField: UITextField)
     {
         textField.resignFirstResponder()
+        
+        self.replacementString = textField.text ?? ""
+        
+        self.changePropagationDelegate?.value(of: self.formFieldInputValue, changedAt: self)
     }
 }
 

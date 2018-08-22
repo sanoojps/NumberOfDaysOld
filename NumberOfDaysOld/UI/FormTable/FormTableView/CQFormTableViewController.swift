@@ -237,8 +237,8 @@ extension CQFormTableViewController:CQValueChangePropagatorDelegate
                     return
                 }
                 
-                let currentValue = formfield.value
-                formfield.setValue(currentValue + change)
+                //let currentValue = formfield.value
+                formfield.setValue(change)
                 
                 self.dataSourceCollection[sourceId.formFieldIdentifier] =
                 formfield
